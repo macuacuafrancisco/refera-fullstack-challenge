@@ -4,7 +4,7 @@ var cors = require('cors')
 var bodyParser = require('body-parser')
 
 const app = express()
-const port = 3000
+const port = 8000
 
 require('dotenv').config()
 
