@@ -6,13 +6,14 @@ const Order = require('../models/Order')
 route.post(
     '/',
     async (req, res) => {
-      let {  description,category, contact, agency,    company,   deadline } = req.body;
+      let {  description,category, contactName, contactPhone, agency,    company,   deadline } = req.body;
 
         try {      
           let  newOrder = new Order({                   
                     description,  
                     category, 
-                    contact,
+                    contactName,
+                    contactPhone,
                     agency,
                     company,
                     deadline
@@ -91,10 +92,12 @@ route.put(
                   result.Category = req.body.Category
           }
 
-          if(req.body.contact){
-                  result.contact = req.body.contact
+          if(req.body.contactName){
+                  result.contactName = req.body.contactName
           }
-
+          if(req.body.contactPhone){
+            result.contactPhone = req.body.contactPhone
+    }
           if(req.body.agency){
                 result.agency = req.body.agency
           }

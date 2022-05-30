@@ -7,7 +7,11 @@ const orderSchema = new Schema({
     ref:'category',
     required: true
   }, 
-  contact: {
+  contactName: {
+    type: String, 
+    required:true
+  } ,
+  contactPhone: {
     type: String, 
     required:true
   } ,
