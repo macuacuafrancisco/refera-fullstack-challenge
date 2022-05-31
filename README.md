@@ -16,13 +16,17 @@ We use React and Django in our real application, feel comfortable to chose the a
 
 - Provide clear instructions on how to run the application in development mode
 
-1) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git
-2) Go to project root root (cd refera-fullstack-challenge)
-3) > npm install
-4) > npm run dev
-5) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git
-6) > npm install
-7) > npm start
+1) Go to your workspace and on terminal run:
+ > git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git
+ Go to project root root (cd refera-fullstack-challenge)
+ > npm install
+  make sure the port 8000 is available
+ > npm run dev
+ exit the folder (cd ..), on the workspace root check the following project(frontend)
+
+2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git
+ > npm install
+ > npm start
 
 - Provide clear instructions on how the application would run in a production environment
 
@@ -61,8 +65,8 @@ We use React and Django in our real application, feel comfortable to chose the a
   - Order
   - Category
 
-R) We use MongoAtlas Could 
-1) create a file called .env and paste the following code
+R) We use MongoDB Atlas Could Database
+1) create a file called .env and paste the following code bellow to access the database
 
 MONGO_URI=mongodb+srv://iconet:9CDxBfhea9fhvExm@cluster0.f8hf8.mongodb.net/refera?retryWrites=true&w=majority
 PORT=8000
@@ -70,9 +74,17 @@ jwtSecret=mysecret-c
 
 - Describe how you would structure the database to account for 
   - Real estate agency registration data
+  #R) The Agency has details as (location, contacts, kind of agency ...etc), is convinient to be an Entity
+
   - Company registration data
+  #R) Company should be a Entity with its  attributes (name, contact, email, address,fax,....etc)
+  
   - Contact registration data
+  R) Contact should be a Entity that stores (mainNumber, alternativeNumber,email,address)
+    
   - Describe what needs to be changed on the API you implemented
+R) We must change the return of date and format for much convinient presentation
+
 - One web page, following the low fidelity prototype presented on the **Resources**
   - Table with orders data, allowing the user to order the results by each column
   - Button to open modal to create new order
