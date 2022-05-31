@@ -16,74 +16,74 @@ We use React and Django in our real application, feel comfortable to chose the a
 
 - Provide clear instructions on how to run the application in development mode
 
-1) Go to your workspace and on terminal run:
- > git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git
- Go to project root root (cd refera-fullstack-challenge)
- > npm install
-  make sure the port 8000 is available
- > npm run dev
- exit the folder (cd ..), on the workspace root check the following project(frontend)
+1) Go to your workspace and on terminal run:<br/>
+ > git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git<br/>
+ Go to project root root (cd refera-fullstack-challenge)<br/>
+ > npm install<br/>
+  make sure the port 8000 is available<br/>
+ > npm run dev<br/>
+ exit the folder (cd ..), on the workspace root check the following project(frontend)<br/>
 
-2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git
- > npm install
- > npm start
+2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git<br/>
+ > npm install<br/>
+ > npm start<br/>
 
 - Provide clear instructions on how the application would run in a production environment
 
-1) We can use two different approaches, 
-2) first is to create a nested client with the frontend implementation and configure script to run a post build on our backend, with this configuration every time we build the core a HTML webpage is genarated by post bulid configuration
-3) second, we can run the front-end and backend in two different port, this is recommended for VPSs
+1) We can use two different approaches, <br/>
+2) first is to create a nested client with the frontend implementation and configure script to run a post build on our backend, with this configuration every time we build the core a HTML webpage is genarated by post bulid configuration<br/>
+3) second, we can run the front-end and backend in two different port, this is recommended for VPSs<br/>
 
 - Describe how you would implement an authentication layer for the web application (don't need to implement)
 
-1) We install  JsonWebToken On Backend, this JsonWebToken receives plain password and converts in a hash password, we store thr hashed password on our database, every time the user signs in  the backend Application return a token to frontend
-2) Every Request that needs authorization must contains the token and the backend validates de token using the hash algorhitm
+1) We install  JsonWebToken On Backend, this JsonWebToken receives plain password and converts in a hash password, we store thr hashed password on our database, every time the user signs in  the backend Application return a token to frontend<br/>
+2) Every Request that needs authorization must contains the token and the backend validates de token using the hash algorhitm<br/>
 
 
 - RESTful API allowing CRUD and list operations on the orders
   - Endpoint to create/retrieve/update/delete order
-1) http://localhost:8000/api/orders (POST)
-2) http://localhost:8000/api/orders/{id} (PUT)
-3) http://localhost:8000/api/orders/{id} (DELETE)
+1) http://localhost:8000/api/orders (POST)<br/>
+2) http://localhost:8000/api/orders/{id} (PUT)<br/>
+3) http://localhost:8000/api/orders/{id} (DELETE)<br/>
 
   - Endpoint to list order
-4)  - http://localhost:8000/api/orders (GET)
+4)  - http://localhost:8000/api/orders (GET)<br/>
 
 
 - RESTful API allowing CRUD operations on the categories
   - Endpoint to create/retrieve/update/delete category
-1) http://localhost:8000/api/categories (POST)
-2) http://localhost:8000/api/categories/{id} (PUT)
-3) http://localhost:8000/api/categories/{id} (DELETE)
+1) http://localhost:8000/api/categories (POST)<br/>
+2) http://localhost:8000/api/categories/{id} (PUT)<br/>
+3) http://localhost:8000/api/categories/{id} (DELETE)<br/>
 
 
   - Endpoint to list categories
-4)  - http://localhost:8000/api/categories (GET)
+4)  - http://localhost:8000/api/categories (GET)<br/>
 
 
 - Database to store data from the following resources
   - Order
   - Category
 
-R) We use MongoDB Atlas Could Database
-1) create a file called .env and paste the following code bellow to access the database
+R) We use MongoDB Atlas Could Database<br/>
+1) create a file called .env and paste the following code bellow to access the database<br/>
 
-MONGO_URI=mongodb+srv://iconet:9CDxBfhea9fhvExm@cluster0.f8hf8.mongodb.net/refera?retryWrites=true&w=majority
-PORT=8000
-jwtSecret=mysecret-c
+MONGO_URI=mongodb+srv://iconet:9CDxBfhea9fhvExm@cluster0.f8hf8.mongodb.net/refera?retryWrites=true&w=majority<br/>
+PORT=8000<br/>
+jwtSecret=mysecret-c<br/>
 
 - Describe how you would structure the database to account for 
   - Real estate agency registration data
-  #R) The Agency has details as (location, contacts, kind of agency ...etc), is convinient to be an Entity
+  #R) The Agency has details as (location, contacts, kind of agency ...etc), is convinient to be an Entity<br/>
 
   - Company registration data
-  #R) Company should be a Entity with its  attributes (name, contact, email, address,fax,....etc)
+  #R) Company should be a Entity with its  attributes (name, contact, email, address,fax,....etc)<br/>
   
   - Contact registration data
-  R) Contact should be a Entity that stores (mainNumber, alternativeNumber,email,address)
+  R) Contact should be a Entity that stores (mainNumber, alternativeNumber,email,address)<br/>
     
   - Describe what needs to be changed on the API you implemented
-R) We must change the return of date and format for much convinient presentation
+R) We must change the return of date and format for much convinient presentation<br/>
 
 - One web page, following the low fidelity prototype presented on the **Resources**
   - Table with orders data, allowing the user to order the results by each column
