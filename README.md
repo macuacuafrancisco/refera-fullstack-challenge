@@ -15,17 +15,59 @@ We use React and Django in our real application, feel comfortable to chose the a
 ## Acceptance criteria
 
 - Provide clear instructions on how to run the application in development mode
+
+1) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git
+2) Go to project root root (cd refera-fullstack-challenge)
+3) > npm install
+4) > npm run dev
+5) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git
+6) > npm install
+7) > npm start
+
 - Provide clear instructions on how the application would run in a production environment
+
+1) We can use two different approaches, 
+2) first is to create a nested client with the frontend implementation and configure script to run a post build on our backend, with this configuration every time we build the core a HTML webpage is genarated by post bulid configuration
+3) second, we can run the front-end and backend in two different port, this is recommended for VPSs
+
 - Describe how you would implement an authentication layer for the web application (don't need to implement)
+
+1) We install  JsonWebToken On Backend, this JsonWebToken receives plain password and converts in a hash password, we store thr hashed password on our database, every time the user signs in  the backend Application return a token to frontend
+2) Every Request that needs authorization must contains the token and the backend validates de token using the hash algorhitm
+
+
 - RESTful API allowing CRUD and list operations on the orders
   - Endpoint to create/retrieve/update/delete order
+1) http://localhost:8000/api/orders (POST)
+2) http://localhost:8000/api/orders/{id} (PUT)
+3) http://localhost:8000/api/orders/{id} (DELETE)
+
   - Endpoint to list order
+4)  - http://localhost:8000/api/orders (GET)
+
+
 - RESTful API allowing CRUD operations on the categories
   - Endpoint to create/retrieve/update/delete category
+1) http://localhost:8000/api/categories (POST)
+2) http://localhost:8000/api/categories/{id} (PUT)
+3) http://localhost:8000/api/categories/{id} (DELETE)
+
+
   - Endpoint to list categories
+4)  - http://localhost:8000/api/categories (GET)
+
+
 - Database to store data from the following resources
   - Order
   - Category
+
+R) We use MongoAtlas Could 
+1) create a file called .env and paste the following code
+
+MONGO_URI=mongodb+srv://iconet:9CDxBfhea9fhvExm@cluster0.f8hf8.mongodb.net/refera?retryWrites=true&w=majority
+PORT=8000
+jwtSecret=mysecret-c
+
 - Describe how you would structure the database to account for 
   - Real estate agency registration data
   - Company registration data
