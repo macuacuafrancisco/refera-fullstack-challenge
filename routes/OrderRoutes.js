@@ -6,11 +6,11 @@ const Order = require('../models/Order')
 route.post(
     '/',
     async (req, res) => {
-      let {  description,category, contactName, contactPhone, agency,    company,   deadline } = req.body;
+      let {  category, contactName, contactPhone, agency,    company,   deadline } = req.body;
 
         try {      
           let  newOrder = new Order({                   
-                    description,  
+                      
                     category, 
                     contactName,
                     contactPhone,
