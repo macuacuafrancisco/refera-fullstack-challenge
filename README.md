@@ -24,7 +24,7 @@ We use React and Django in our real application, feel comfortable to chose the a
 # npm run dev<br/>
  exit the folder (cd ..), on the workspace root check the following project(frontend)<br/>
 
-2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git<br/>
+#2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git<br/>
 # npm install<br/>
 # npm start<br/>
 
@@ -42,23 +42,23 @@ We use React and Django in our real application, feel comfortable to chose the a
 
 - RESTful API allowing CRUD and list operations on the orders
   - Endpoint to create/retrieve/update/delete order
-1) http://localhost:8000/api/orders (POST)<br/>
-2) http://localhost:8000/api/orders/{id} (PUT)<br/>
-3) http://localhost:8000/api/orders/{id} (DELETE)<br/>
+#1) http://localhost:8000/api/orders (POST)<br/>
+#2) http://localhost:8000/api/orders/{id} (PUT)<br/>
+#3) http://localhost:8000/api/orders/{id} (DELETE)<br/>
 
   - Endpoint to list order
-4)  - http://localhost:8000/api/orders (GET)<br/>
+#4)  - http://localhost:8000/api/orders (GET)<br/>
 
 
 - RESTful API allowing CRUD operations on the categories
   - Endpoint to create/retrieve/update/delete category
-1) http://localhost:8000/api/categories (POST)<br/>
-2) http://localhost:8000/api/categories/{id} (PUT)<br/>
-3) http://localhost:8000/api/categories/{id} (DELETE)<br/>
+#1) http://localhost:8000/api/categories (POST)<br/>
+#2) http://localhost:8000/api/categories/{id} (PUT)<br/>
+#3) http://localhost:8000/api/categories/{id} (DELETE)<br/>
 
 
   - Endpoint to list categories
-4)  - http://localhost:8000/api/categories (GET)<br/>
+#4)  - http://localhost:8000/api/categories (GET)<br/>
 
 
 - Database to store data from the following resources
