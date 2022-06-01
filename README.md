@@ -82,9 +82,9 @@ jwtSecret=mysecret-c<br/>
   - Contact registration data
   R) Contact should be a Entity that stores (mainNumber, alternativeNumber,email,address)<br/>
     
-  - Describe what needs to be changed on the API you implemented
+  - Describe what needs to be changed on the API you implemented<br/>
 #1) We must change the return of date and format for much convinient presentation<br/>
-#2) The Design Needs to be improved, it didnt follow the prototype layout, a CSS work is demanded to make it much presentable
+#2) The Design Needs to be improved, it didnt follow the prototype layout, a CSS work is demanded to make it much presentable<br/>
 
 - One web page, following the low fidelity prototype presented on the **Resources**
   - Table with orders data, allowing the user to order the results by each column
