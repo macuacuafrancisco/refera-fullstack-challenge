@@ -17,16 +17,16 @@ We use React and Django in our real application, feel comfortable to chose the a
 - Provide clear instructions on how to run the application in development mode
 
 1) Go to your workspace and on terminal run:<br/>
- > git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git<br/>
+# git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge.git<br/>
  Go to project root root (cd refera-fullstack-challenge)<br/>
- > npm install<br/>
+# npm install<br/>
   make sure the port 8000 is available<br/>
- > npm run dev<br/>
+# npm run dev<br/>
  exit the folder (cd ..), on the workspace root check the following project(frontend)<br/>
 
 2) git clone git@github.com:macuacuafrancisco/refera-fullstack-challenge-front.git<br/>
- > npm install<br/>
- > npm start<br/>
+# npm install<br/>
+# npm start<br/>
 
 - Provide clear instructions on how the application would run in a production environment
 
